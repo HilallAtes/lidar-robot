@@ -360,6 +360,12 @@
       <state_interface name="position"/>
     </joint>
 
+    <joint name="zed_camera_joint" type="fixed">
+      <parent link="base_link"/> <!-- ya da kameranın bağlı olacağı link -->
+      <child link="zed_camera_link"/>
+      <origin xyz="1.05 0.35 0.34" rpy="0 0 0"/> <!-- Burayı istediğin pozisyona göre ayarlayabilirsin -->
+    </joint>
+
   </ros2_control>
 
 </robot>
